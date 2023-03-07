@@ -1,0 +1,95 @@
+[33mcommit b3b6a25b3983eaef17d9c31b384a6be88551a569[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Sat Mar 4 12:03:58 2023 -0300
+
+    camada cliente
+
+[33mcommit a2466d8b348b9c933d34bb29fe094912614e8ad8[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Sat Mar 4 10:21:23 2023 -0300
+
+    alimentacao da base de dados
+
+[33mcommit 0326bb6edd9bf846bd868a653924998c6cd05043[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Sat Mar 4 10:00:25 2023 -0300
+
+    method delete
+
+[33mcommit 4c05a2da2080d784120dfbe09058e331d4f1510d[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Sat Mar 4 09:48:46 2023 -0300
+
+    method save
+
+[33mcommit 718bdf5aaa69aa5446c05c3cdced2ac86a9bff96[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Sat Mar 4 09:34:48 2023 -0300
+
+    validação nos campos de dominio
+
+[33mcommit d6edb217295e8d23ff80bff55772b19f4b69f25c[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Sat Mar 4 08:50:02 2023 -0300
+
+    exception para email e cpf
+
+[33mcommit 90c74767a93c93a60b3bdc9d3b40d313dcfb08c9[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 22:06:09 2023 -0300
+
+    findAll
+
+[33mcommit 06f5c120761e7b78dad4ac210beafdec4d937cb9[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 21:50:27 2023 -0300
+
+    exception
+
+[33mcommit 3b2ac8ff604a53cc2a3ce8f21aa7f28a1b8d37d5[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 11:02:26 2023 -0300
+
+    Camada DTO
+
+[33mcommit c8287ac0f5b44da86cb35ae5fc2b0c58fba41013[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 09:40:33 2023 -0300
+
+    jsonignore
+
+[33mcommit 9f0dba640f5ca8ed218d6efe6ff1624c3f722583[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 09:10:03 2023 -0300
+
+    perfil dev
+
+[33mcommit e0dbbab0160ea75286cc68f300ff91f558cfed93[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 09:01:42 2023 -0300
+
+    repository, service criados
+
+[33mcommit 559cba24ed945652eb7baa8371b41661b2d2c2f8[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 07:51:51 2023 -0300
+
+    classes de dominio
+
+[33mcommit 3696d749eb084476f70840fb2dd58ca221c507d6[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 07:35:47 2023 -0300
+
+    classes 'Chamado','Cliente','Pessoa','Tecnico'
+
+[33mcommit 2c4d5d6e79f68d30eef0622c01684c0771ae0f4d[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 00:16:26 2023 -0300
+
+    Tipos enumeradoso
+
+[33mcommit e2a897370e93f5217a44ac65b63358e5bef3b544[m
+Author: MarceloFLopez <marceloferreiralopez@gmail.com>
+Date:   Fri Mar 3 00:04:31 2023 -0300
+
+    first commit
