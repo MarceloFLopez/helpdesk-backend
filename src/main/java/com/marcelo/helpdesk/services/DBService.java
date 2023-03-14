@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.marcelo.helpdesk.documentation.Documento;
 import com.marcelo.helpdesk.model.Chamado;
 import com.marcelo.helpdesk.model.Cliente;
 import com.marcelo.helpdesk.model.Tecnico;
@@ -13,6 +14,7 @@ import com.marcelo.helpdesk.model.enums.Perfil;
 import com.marcelo.helpdesk.model.enums.Prioridade;
 import com.marcelo.helpdesk.model.enums.Status;
 import com.marcelo.helpdesk.repository.ChamadoRepository;
+import com.marcelo.helpdesk.repository.DocumentoRepository;
 import com.marcelo.helpdesk.repository.PessoaRepository;
 
 @Service
@@ -24,8 +26,16 @@ public class DBService {
 	private PessoaRepository pessoaRepository;
 	@Autowired
 	private BCryptPasswordEncoder encoder;
+	@Autowired
+	private DocumentoRepository documentoRepository ;
 
 	public void instanciaDB() {
+		
+		Documento d1 = new Documento(null, "https://helpdesk-backend-production-5dbe.up.railway.app/login","Endpoint (/login) usado para gerar o token de acesso sem ele você não tera permissão de acesso aos demais endpoints.");
+		Documento d2 = new Documento(null, "https://helpdesk-backend-production-5dbe.up.railway.app/clientes","");
+		Documento d3 = new Documento(null, "https://helpdesk-backend-production-5dbe.up.railway.app/tecnicos","");
+		Documento d4 = new Documento(null, "https://helpdesk-backend-production-5dbe.up.railway.app/chamados","");
+		
 
 		Tecnico tec1 = new Tecnico(null, "Valdir Cezar", "550.482.150-95", "valdir@mail.com", encoder.encode("123"));
 		tec1.addPerfil(Perfil.ADMIN);
@@ -47,6 +57,7 @@ public class DBService {
 		Chamado c5 = new Chamado(null, Prioridade.MEDIA, Status.ANDAMENTO, "Chamado 5", "Teste chamado 5", tec2, cli1);
 		Chamado c6 = new Chamado(null, Prioridade.BAIXA, Status.ENCERRADO, "Chamado 7", "Teste chamado 6", tec1, cli5);
 
+		documentoRepository.saveAll(Arrays.asList(d1,d2,d3,d4));
 		pessoaRepository.saveAll(Arrays.asList(tec1, tec2, tec3, tec4, tec5, cli1, cli2, cli3, cli4, cli5));
 		chamadoRepository.saveAll(Arrays.asList(c1, c2, c3, c4, c5, c6));
 	}
