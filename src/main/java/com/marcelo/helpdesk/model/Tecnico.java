@@ -28,7 +28,7 @@ public class Tecnico extends Pessoa {
 		super(id, nome, cpf, email, senha);
 		addPerfil(Perfil.CLIENTE);
 	}
-	
+
 	public Tecnico(TecnicoDTO obj) {
 		super();
 		this.id = obj.getId();

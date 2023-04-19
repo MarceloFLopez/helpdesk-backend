@@ -20,6 +20,7 @@ import com.marcelo.helpdesk.model.enums.Perfil;
 
 @Entity
 public abstract class Pessoa implements Serializable {
+	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -141,6 +142,18 @@ public abstract class Pessoa implements Serializable {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Objeto: Pessoa"+
+				"\nID:" + id +
+				"\nNome: " + nome +
+				"\nCPF: " + cpf + 
+				"\nEmail: " + email +
+				"\nSenha: " + senha	+
+				"\nPerfis: " + perfis + 
+				"\nData de Criação: " + dataCriacao ;
 	}
 
 }
